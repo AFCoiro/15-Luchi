@@ -1,8 +1,16 @@
 @use './mixins' as *;
 @use './variables' as *;
+@use './components/hero' as *;
 
-body{
-    h1{
-        color:red;
-    }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
 }

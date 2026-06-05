@@ -1,16 +1,47 @@
-# React + Vite
+# 🎉 Quinceañera Invitation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Overview
+- [ ] Digital invitation for a 15th birthday party.
+- [ ] Built with **React + Vite**.
+- [ ] Deployed on **Vercel**.
+- [ ] Database managed with **Firestore** for invitations and event data.
+- [ ] Content editable via **JSON** for easy updates.
+- [ ] Mobile-first design (target audience: guests on smartphones).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Features
+- [ ] Customizable texts, colors, and fonts from JSON.
+- [ ] Integration with **Google Maps** for venue location.
+- [ ] RSVP management with Firestore.
+- [ ] Elegant / semi-formal **dress code** section.
+- [ ] Future admin panel for real-time editing.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📚 Tech Stack
+- [ ] React + Vite
+- [ ] Firebase Firestore
+- [ ] Vercel (deployment)
+- [ ] Kiro (AI-assisted coding)
+- [ ] Copilot (AI guidance and documentation)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Setup Instructions
+- [ ] Clone the repository.
+- [ ] Install dependencies: `npm install`.
+- [ ] Run locally: `npm run dev`.
+- [ ] Deploy to Vercel.
+
+---
+
+## 🔮 Future Work
+- [ ] Admin panel for editing invitations.
+- [ ] Animations and aspirational design styles.
+- [ ] Automatic RSVP confirmation.
+
+---
+
+## 🔗 Live Demo
+👉 Coming soon: [Project Link](https://vercel.com)  
