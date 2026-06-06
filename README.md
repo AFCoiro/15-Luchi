@@ -24,7 +24,7 @@
 - [ ] Firebase Firestore
 - [ ] Vercel (deployment)
 - [ ] Kiro (AI-assisted coding)
-- [ ] Copilot (AI guidance and documentation)
+- [ ] Claude.ai  (AI guidance and documentation)
 
 ---
 
