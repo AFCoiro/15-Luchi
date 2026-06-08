@@ -1,0 +1,25 @@
+// Scroll reveal utility
+//
+// Usage:
+//   1. Add class `reveal` to any element you want to animate in.
+//   2. Attach a ref from `useScrollReveal(delay?)` to the same element.
+//   3. The hook adds `is-visible` when the element enters the viewport.
+//
+// Staggered children example:
+//   <div ref={useScrollReveal(0)}   className="reveal"> first  </div>
+//   <div ref={useScrollReveal(150)} className="reveal"> second </div>
+//   <div ref={useScrollReveal(300)} className="reveal"> third  </div>
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

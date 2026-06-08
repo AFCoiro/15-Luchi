@@ -1,6 +1,7 @@
 @use './mixins' as *;
 @use './variables' as *;
 @use './components/hero' as *;
+@use './utils/reveal' as *;
 
 *,
 *::before,
@@ -10,7 +11,8 @@
   padding: 0;
 }
 
-body {
+html, body {
   min-height: 100vh;
   font-family: sans-serif;
+  overflow-x: hidden;
 }

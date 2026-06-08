@@ -39,12 +39,12 @@ function App() {
 
   return (
     <>
-      {/* Hero + cuenta regresiva */}
+      {/* Hero + Clock */}
       <HeroBanner data={data} />
 
       <Countdown targetDate={data.date} />
 
-      {/* Bloque central: detalles + dress code */}
+      {/* Central block: details + dress code */}
       <SectionDivider index={0} alt={decorativeImages[0].alt} />
 
       <EventDetails
@@ -54,7 +54,7 @@ function App() {
       />
       <DressCode dresscode={data.dresscode} />
 
-      {/* Mapa + clima */}
+      {/* Map + weather */}
       <SectionDivider index={1} alt={decorativeImages[1].alt} />
 
       <Map venue={data.venue} />
@@ -65,7 +65,7 @@ function App() {
 
       <RSVP rsvp={data.rsvp} />
 
-      {/* Extras aspiracionales */}
+      {/* Extras  */}
       <SectionDivider index={3} alt={decorativeImages[3].alt} />
 
       <SpotifyPlayer spotify={data.spotify} />
