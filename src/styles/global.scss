@@ -1,6 +1,9 @@
 @use './mixins' as *;
 @use './variables' as *;
+
 @use './components/hero' as *;
+@use './components/countdown' as *;
+
 @use './utils/reveal' as *;
 
 *,
@@ -11,8 +14,49 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   min-height: 100vh;
-  font-family: sans-serif;
   overflow-x: hidden;
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $font-body;
+  font-size: 16px;
+  line-height: 1.6;
+
+background-image: 
+  linear-gradient(
+    to bottom,
+    rgba(242, 213, 213, 0.45) 0%,
+    transparent 30%,
+    transparent 70%,
+    rgba(230, 230, 250, 0.35) 100%
+  ),
+  url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M20 4 L36 20 L20 36 L4 20 Z' fill='none' stroke='%23d4af37' stroke-width='0.6' stroke-opacity='0.12'/%3E%3C/svg%3E");
+background-size: auto, 40px 40px;
+}
+
+h1, h2, h3 {
+  font-family: $font-title;
+  line-height: 1.2;
+  color: $color-text;
+}
+
+p {
+  font-family: $font-body;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: $section-padding 1.5rem;
 }
