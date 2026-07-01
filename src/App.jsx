@@ -9,6 +9,7 @@ import Map from './components/Map'
 import WeatherForecast from './components/WeatherForecast'
 import RSVP from './components/RSVP'
 import Footer from './components/Footer'
+import { Gem } from 'lucide-react';
 
 function App() {
   const [data, setData] = useState(null)
@@ -44,9 +45,18 @@ function App() {
 
       <Countdown targetDate={data.date} />
 
-      {/* Central block: details + dress code */}
-      <SectionDivider index={0} alt={decorativeImages[0].alt} />
+      <section className="emotional-section">
+        <p className='emotional-section__copy'>Hay momentos que se sueñan e imaginan, se crean día a día. Hoy es tiempo de compartir lo soñado, es ahÍ donde necesito de tu magia para que juntos logremos que mi noche explote de emoción, diversión y brillos.
+        </p>
+        {/* <Gem 
+          strokeWidth={0.5}
+            size={30} 
+            color='#ffffffd9'
+            
+          /> */}
+      </section>
 
+      {/* Central block: details + Map + dress code */}
       <EventDetails
         venue={data.venue}
         dateText={data.dateText}
@@ -54,8 +64,7 @@ function App() {
       />
       <DressCode dresscode={data.dresscode} />
 
-      {/* Map + weather */}
-      <SectionDivider index={1} alt={decorativeImages[1].alt} />
+      {/* weather */}
 
       <Map venue={data.venue} />
       <WeatherForecast date={data.date} coordinates={data.venue.coordinates} />

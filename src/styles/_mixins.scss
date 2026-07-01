@@ -1,0 +1,37 @@
+@use './variables' as *;
+
+@mixin btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  font-family: $font-detail;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+  border: 1.5px solid $color-gold;
+  border-radius: 50px;
+  padding: 11px 24px;
+  color: $color-gold;
+  transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-gold;
+    color: $color-bg;
+  }
+}
+
+@mixin section-light {
+  background-color: $color-bg;
+  background-image: $bg-pattern-light;
+  background-size: 40px 40px;
+}
+
+@mixin section-dark {
+  background-color: $color-primary;
+  background-image: $bg-pattern-dark;
+  background-size: 40px 40px;
+  color: $color-text-light;
+}
