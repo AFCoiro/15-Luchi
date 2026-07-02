@@ -45,15 +45,17 @@ function App() {
 
       <Countdown targetDate={data.date} />
 
+      {/* emotional copy divider */}
       <section className="emotional-section">
-        <p className='emotional-section__copy'>Hay momentos que se sueñan e imaginan, se crean día a día. Hoy es tiempo de compartir lo soñado, es ahÍ donde necesito de tu magia para que juntos logremos que mi noche explote de emoción, diversión y brillos.
-        </p>
-        {/* <Gem 
-          strokeWidth={0.5}
-            size={30} 
-            color='#ffffffd9'
-            
-          /> */}
+        <div className='emotional-section__border-container'>
+          <p className='emotional-section__copy'>Hay momentos que se sueñan e imaginan, se crean día a día. Hoy es tiempo de compartir lo soñado, es ahÍ donde necesito de tu magia para que juntos logremos que mi noche explote de emoción, diversión y brillos.
+          </p>
+          <Gem 
+            strokeWidth={0.5}
+              size={30} 
+              className='emotional-section__icon'
+            />
+        </div>
       </section>
 
       {/* Central block: details + Map + dress code */}

@@ -1,4 +1,23 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
 // EventDetails styles
 .event-details {
-  // TODO
+  @include display-center;
+  &__title{
+    padding-bottom: 1rem;
+  }
+  &__icon {
+    color: $color-primary;
+    display: block;
+    transform-origin: center;
+    @include icon-bounce;
+  }
+  &__info{
+    text-align: center;
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
+
+  }
 }
+

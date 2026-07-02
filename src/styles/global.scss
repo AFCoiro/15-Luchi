@@ -4,6 +4,8 @@
 
 @use './components/hero' as *;
 @use './components/countdown' as *;
+@use './components/event-details' as *;
+
 
 @use './utils/reveal' as *;
 
@@ -34,6 +36,20 @@ h1, h2, h3 {
   color: $color-primary;
 }
 
+.u-script  {
+  font-family: $font-decorative;
+  font-size: clamp(1.3rem, 6vw, 1.6rem);
+  font-weight: 400;
+
+}
+
+.u-title {
+    font-size: clamp(0.65rem, 2vw, 0.8rem);
+    font-family: $font-detail;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
 p {
   font-family: $font-body;
   line-height: 1.6;
@@ -58,3 +74,4 @@ section {
 section + section {
   border-block: 1px solid rgba(212, 175, 55, 0.15);
 }
+

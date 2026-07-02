@@ -43,24 +43,24 @@ useEffect(()=>{
 
   return (
     <section className="countdown">
-      <h2 className="countdown__title">Agendá la fecha</h2>
-      <h3 className="countdown__subTitle">Sábado 19 de Septiembre · 21:00 hs</h3>
+      <h2 className="countdown__title u-title ">Agendá la fecha</h2>
+      <h3 className="countdown__subTitle u-script">Sábado 19 de Septiembre · 21:00 hs</h3>
       <div className="countdown__units">
         <div className="countdown__unit">
           <span className="countdown__number">{timeLeft ? timeLeft.days : '--'}</span>
-          <span className="countdown__label">días</span>
+          <span className="countdown__label u-title">días</span>
         </div>
         <div className="countdown__unit">
           <span className="countdown__number">{timeLeft ? timeLeft.hours : '--'}</span>
-          <span className="countdown__label">horas</span>
+          <span className="countdown__label u-title">horas</span>
         </div>
         <div className="countdown__unit">
           <span className="countdown__number">{timeLeft ? timeLeft.minutes : '--'}</span>
-          <span className="countdown__label">minutos</span>
+          <span className="countdown__label u-title">minutos</span>
         </div>
         <div className="countdown__unit">
           <span className="countdown__number">{timeLeft ? timeLeft.seconds : '--'}</span>
-          <span className="countdown__label">segundos</span>
+          <span className="countdown__label u-title">segundos</span>
         </div>
       </div>
       <a 

@@ -1,21 +1,33 @@
 @use './variables' as *;
+@use './mixins' as *;
 
 .emotional-section{
     background-color: $color-primary;
-    background-image: 
-        url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M20 4 L36 20 L20 36 L4 20 Z' fill='none' stroke='%23d4af37' stroke-width='0.6' stroke-opacity='0.12'/%3E%3C/svg%3E");
-    background-size: auto, 40px 40px;
+    background-image:$bg-pattern-dark;
+    background-size: 40px 40px;
 
-    &__copy{
-        border-top: 1px solid rgba(212, 175, 55, 0.3);
-        border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-        padding: 2rem 0;
-        text-align: center;
-        font-family: $font-decorative;
-        font-size: clamp(1.1rem, 3vw, 1.5rem);
-        line-height: 1.8;
+    &__border-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid rgba(201, 166, 97, 0.3);
+    border-bottom: 1px solid rgba(201, 166, 97, 0.3);
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+    }
+
+    &__copy {
+    text-align: center;
+    font-family: $font-decorative;
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    line-height: 1.8;
+    color: $color-text-light;
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
+    }
+    &__icon{
         color: $color-text-light;
-        max-width: 600px;
-        margin: 0 auto;
+          @include icon-float;
     }
 }

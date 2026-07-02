@@ -9,19 +9,14 @@
   gap: 1rem;
   &__title{
     color: $color-gold;
-    font-size: clamp(0.65rem, 2vw, 0.8rem);
-    font-family: $font-detail;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
   }
   &__subTitle{
-    font-family: $font-decorative;
-    font-weight: 400;
+    color: $color-primary;
 
   }
   &__units{
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     justify-content: space-evenly;
     align-items: center;
     gap: 0.5rem;
@@ -42,10 +37,6 @@
   }
 
   &__label {
-    font-size: clamp(0.65rem, 2vw, 0.8rem);
-    font-family: $font-detail;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
     color: $color-primary;
     opacity: 0.7;
   }
