@@ -19,5 +19,15 @@
         font-size: clamp(1.2rem, 3vw, 1.5rem);
 
   }
+  &__map{
+    padding:3px;
+    border: 3px solid $color-secondary-t;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-block: $space-lg;
+  }
+  &__map-link{
+    @include btn-outline;
+  }
 }
 

@@ -1,7 +1,22 @@
+import { Shirt ,Sparkles  } from 'lucide-react';
+
 const DressCode = ({ dresscode }) => {
   return (
     <section className="dresscode">
-      <h2 className="dresscode__title">{dresscode.title}</h2>
+      <h2 className="u-title dresscode__title">{dresscode.title}</h2>
+        <div className="dresscode__title__icon-container">
+        <Shirt 
+          size={48}
+          strokeWidth={1}
+          >
+          <Sparkles
+            size={8}
+            x={8}
+            y={8}
+            
+          />
+      </Shirt> 
+      </div>
       <p className="dresscode__description">{dresscode.description}</p>
       <p className="dresscode__color-note">{dresscode.mainColorNote}</p>
       <p className="dresscode__note">{dresscode.note}</p>
@@ -10,3 +25,4 @@ const DressCode = ({ dresscode }) => {
 }
 
 export default DressCode
+ 

@@ -37,8 +37,7 @@ const EventDetails = ({ venue }) => {
         href={venue.googleMapsUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="event-details__map-link"
-      >
+        className="event-details__map-link">
         Como llegar
       </a>
     </section>

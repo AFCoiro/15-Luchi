@@ -19,15 +19,15 @@
   text-transform: uppercase;
   text-decoration: none;
   background: transparent;
-  border: 1.5px solid $color-gold;
+  border: 1.5px solid $color-secondary;
   border-radius: 50px;
   padding: 11px 24px;
-  color: $color-gold;
+  color: $color-secondary;
   transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
   cursor: pointer;
 
   &:hover {
-    background-color: $color-gold;
+    background-color: $color-secondary;
     color: $color-bg;
   }
 }

@@ -10,15 +10,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-top: 1px solid rgba(201, 166, 97, 0.3);
-    border-bottom: 1px solid rgba(201, 166, 97, 0.3);
+    border-top: 1px solid $color-secondary;
+    border-bottom: 1px solid $color-secondary ;
     padding: 2rem 1.5rem;
     gap: 1.5rem;
     }
 
     &__copy {
     text-align: center;
-    font-family: $font-decorative;
     font-size: clamp(1.4rem, 4vw, 2rem);
     line-height: 1.8;
     color: $color-text-light;

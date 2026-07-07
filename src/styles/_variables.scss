@@ -1,8 +1,9 @@
 // Colors
 $color-bg: #faf6f2;
 $color-bg-alt: #fdf3e3;
-$color-primary: #6b1f2a;
-$color-gold: #c9a661;
+$color-primary: #4a1040 ;
+$color-secondary: #c4879a;
+$color-secondary-t: #c4879aa2;
 $color-text: #2c2c2c;
 $color-text-light: #ffffffd9;
 $color-accent: #f4e8e2;
@@ -14,7 +15,7 @@ $bg-pattern-dark: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www
 // Fonts
 $font-title: 'Playfair Display', serif;
 $font-body: 'Montserrat', sans-serif;
-$font-decorative: 'Great Vibes', cursive;
+$font-decorative: 'Playfair Display', cursive;
 $font-detail: 'Raleway', sans-serif;
 
 // Transitions
@@ -23,6 +24,14 @@ $transition-bounce: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 
 // Spacing
 $section-padding: clamp(3rem, 8vw, 6rem);
+
+$space-xs:  0.25rem;  //  4px
+$space-sm:  0.5rem;   //  8px
+$space-md:  1rem;     // 16px
+$space-lg:  1.5rem;   // 24px
+$space-xl:  2rem;     // 32px
+$space-2xl: 3rem;     // 48px
+$space-3xl: 4rem;     // 64px
 
 //margin center
 $margin-center: 0 auto;

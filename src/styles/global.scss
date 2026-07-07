@@ -40,7 +40,7 @@ h1, h2, h3 {
   font-family: $font-decorative;
   font-size: clamp(1.3rem, 6vw, 1.6rem);
   font-weight: 400;
-
+  font-style: italic;
 }
 
 .u-title {
@@ -48,6 +48,7 @@ h1, h2, h3 {
     font-family: $font-detail;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+
 }
 
 p {
@@ -72,6 +73,6 @@ section {
 }
 
 section + section {
-  border-block: 1px solid rgba(212, 175, 55, 0.15);
+  border-block: 1px solid $color-secondary-t;
 }
 

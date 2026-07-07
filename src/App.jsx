@@ -5,7 +5,6 @@ import SectionDivider from './components/SectionDivider'
 import EventDetails from './components/EventDetails'
 import DressCode from './components/DressCode'
 import SpotifyPlayer from './components/SpotifyPlayer'
-import Map from './components/Map'
 import WeatherForecast from './components/WeatherForecast'
 import RSVP from './components/RSVP'
 import Footer from './components/Footer'
@@ -48,7 +47,7 @@ function App() {
       {/* emotional copy divider */}
       <section className="emotional-section">
         <div className='emotional-section__border-container'>
-          <p className='emotional-section__copy'>Hay momentos que se sueñan e imaginan, se crean día a día. Hoy es tiempo de compartir lo soñado, es ahÍ donde necesito de tu magia para que juntos logremos que mi noche explote de emoción, diversión y brillos.
+          <p className='u-script emotional-section__copy'>Hay momentos que se sueñan e imaginan, se crean día a día. Hoy es tiempo de compartir lo soñado, es ahÍ donde necesito de tu magia para que juntos logremos que mi noche explote de emoción, diversión y brillos.
           </p>
           <Gem 
             strokeWidth={0.5}
@@ -67,8 +66,6 @@ function App() {
       <DressCode dresscode={data.dresscode} />
 
       {/* weather */}
-
-      <Map venue={data.venue} />
       <WeatherForecast date={data.date} coordinates={data.venue.coordinates} />
 
       {/* RSVP */}

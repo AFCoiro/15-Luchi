@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .hero-banner {
   position: relative;
   width: 100%;
@@ -39,18 +41,16 @@
   &__decorative {
     font-family: 'Great Vibes', cursive;
     font-size: clamp(2rem, 6vw, 3.5rem);
-    color: #d4af37;
+    color: $color-secondary;
     opacity: 0;
     transform: translateY(16px);
     animation: fadeUp 0.9s ease forwards 0.2s;
-    letter-spacing: 0.02em;
   }
 
   &__title {
-    font-family: 'Playfair Display', serif;
     font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: 700;
-    color: #ffffff;
+    color: $color-text-light;
     line-height: 1.1;
     opacity: 0;
     transform: translateY(16px);
@@ -61,17 +61,15 @@
   &__divider {
     width: 60px;
     height: 1px;
-    background: #d4af37;
+    background: $color-secondary;;
     opacity: 0;
     animation: fadeUp 0.9s ease forwards 0.65s;
   }
 
   &__date {
-    font-family: 'Raleway', sans-serif;
     font-size: clamp(0.85rem, 2.5vw, 1rem);
-    color: rgba(255, 255, 255, 0.85);
+    color: $color-text-light;
     letter-spacing: 0.15em;
-    text-transform: uppercase;
     opacity: 0;
     transform: translateY(16px);
     animation: fadeUp 0.9s ease forwards 0.8s;
@@ -79,9 +77,8 @@
   }
 
   &__message {
-    font-family: 'Montserrat', sans-serif;
     font-size: clamp(0.9rem, 2.5vw, 1.05rem);
-    color: rgba(255, 255, 255, 0.75);
+    color: $color-text-light;
     max-width: 480px;
     line-height: 1.6;
     opacity: 0;
