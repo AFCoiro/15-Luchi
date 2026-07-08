@@ -1,4 +1,32 @@
-// DressCode styles
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
 .dresscode {
-  // TODO
+  background-color: $color-primary;
+  background-image:$bg-pattern-dark;
+  background-size: 40px 40px;
+  color: $color-text-light;    
+  @include display-center;
+  &__title{
+    padding-bottom: $space-md;
+  }
+    &__title__icon-container{
+    padding-bottom: $space-md;
+
+  }
+    &__description{
+          padding-bottom: $space-sm;
+
+  }
+    &__color-note{
+    text-align: center;
+    padding-bottom: $space-md;
+    opacity: 0.7;
+    text-wrap: balance;
+  }
+  &__note{
+
+  }
+
 }

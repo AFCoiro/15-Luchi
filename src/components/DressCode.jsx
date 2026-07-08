@@ -6,6 +6,7 @@ const DressCode = ({ dresscode }) => {
       <h2 className="u-title dresscode__title">{dresscode.title}</h2>
         <div className="dresscode__title__icon-container">
         <Shirt 
+          className="dresscode__title__icon"
           size={48}
           strokeWidth={1}
           >
@@ -17,8 +18,8 @@ const DressCode = ({ dresscode }) => {
           />
       </Shirt> 
       </div>
-      <p className="dresscode__description">{dresscode.description}</p>
-      <p className="dresscode__color-note">{dresscode.mainColorNote}</p>
+      <p className="u-script dresscode__description">{dresscode.description}</p>
+      <p className="u-title dresscode__color-note">{dresscode.mainColorNote}</p>
       <p className="dresscode__note">{dresscode.note}</p>
     </section>
   )

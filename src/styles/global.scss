@@ -5,6 +5,7 @@
 @use './components/hero' as *;
 @use './components/countdown' as *;
 @use './components/event-details' as *;
+@use './components/dresscode' as *;
 
 
 @use './utils/reveal' as *;
@@ -33,7 +34,6 @@ body {
 h1, h2, h3 {
   font-family: $font-title;
   line-height: 1.2;
-  color: $color-primary;
 }
 
 .u-script  {
@@ -48,13 +48,11 @@ h1, h2, h3 {
     font-family: $font-detail;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-
 }
 
 p {
   font-family: $font-body;
   line-height: 1.6;
-  color: $color-primary;
 
 }
 

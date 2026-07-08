@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+
 import HeroBanner from './components/HeroBanner'
 import Countdown from './components/Countdown'
 import SectionDivider from './components/SectionDivider'
@@ -8,6 +9,7 @@ import SpotifyPlayer from './components/SpotifyPlayer'
 import WeatherForecast from './components/WeatherForecast'
 import RSVP from './components/RSVP'
 import Footer from './components/Footer'
+
 import { Gem } from 'lucide-react';
 
 function App() {
