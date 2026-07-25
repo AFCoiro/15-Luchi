@@ -5,7 +5,7 @@ import Countdown from './components/Countdown'
 import SectionDivider from './components/SectionDivider'
 import EventDetails from './components/EventDetails'
 import DressCode from './components/DressCode'
-import SpotifyPlayer from './components/SpotifyPlayer'
+// import SpotifyPlayer from './components/SpotifyPlayer'
 import WeatherForecast from './components/WeatherForecast'
 import RSVP from './components/RSVP'
 import Footer from './components/Footer'
@@ -78,7 +78,7 @@ function App() {
       {/* Extras  */}
       <SectionDivider index={3} alt={decorativeImages[3].alt} />
 
-      <SpotifyPlayer spotify={data.spotify} />
+      {/* <SpotifyPlayer spotify={data.spotify} /> */}
 
       {/* Footer */}
       <Footer name={data.birthdayGirlName} />

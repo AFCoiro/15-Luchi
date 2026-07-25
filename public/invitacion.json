@@ -1,36 +1,32 @@
 {
   "birthdayGirlName": "Lucia",
   "title": "Cumple de 15 de Luchi 🎉",
-  "subtitle": "My Sweet 15!",
+  "subtitle": "Mis XV años",
   "date": "2026-09-19",
   "dateText": "Sábado 19 de Septiembre del 2026",
   "time": "21:00",
   "timeText": "Arranca a las 9 PM",
 
   "venue": {
-    "name": "Los Robles Hall",
-    "address": "Gral. Manuel Belgrano 180, Moreno ",
-    "googleMapsUrl": "https://www.google.com/maps/place/Universidad+Siglo+21+-+CAU+MORENO/@-34.6483897,-58.7882188,17z",
+    "name": "Quinta La Palmera",
+    "address": "Gral. Pintos 1900, Trujui ",
+    "googleMapsUrl": "https://maps.app.goo.gl/uPh3CR53YRxp1xzy5",
     "coordinates": {
-      "lat": -34.6484,
-      "lng": -58.7882
+      "lat": -34.5934589,
+      "lng": -58.7745385
     }
   },
 
   "dresscode": {
     "title": "Dress Code",
-    "description": "Elegante / Semi formal",
-    "mainColorNote": "No usar color rosa (reservado para la cumpleañera)",
+    "description": "Elegante Sport",
+    "mainColorNote": "No usar color bordo (reservado para la cumpleañera)",
     "note": "¡Vení con tu mejor look!"
   },
 
   "message": "¡Estás invitado a festejar conmigo este día tan especial!",
   "extraMessage": "Sería un honor compartir este momento con vos.",
 
-  "spotify": {
-    "playlistUrl": "https://open.spotify.com/playlist/2nDNmjXyOSBDwgACJHTRPb",
-    "playlistEmbed": "https://open.spotify.com/embed/playlist/2nDNmjXyOSBDwgACJHTRPb?utm_source=generator"
-  },
 
   "decorativeImages": [
     { "index": 0, "alt": "Luchi posing" },
@@ -52,8 +48,8 @@
   
   "rsvp": {
     "active": true,
-    "limitDate": "2026-09-05",
-    "limitDateText": "hasta el 5 de Septiembre",
-    "message": "Por favor confirmá tu asistencia antes del 5 de Septiembre"
+    "limitDate": "2026-09-19",
+    "limitDateText": "hasta el 19 de Septiembre",
+    "message": "Por favor confirmá tu asistencia antes del 19 de Septiembre"
   }
 }
