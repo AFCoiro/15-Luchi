@@ -1,4 +1,30 @@
-// SectionDivider styles
-.section-divider {
-  // TODO
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.section-divider { 
+  &__container{
+      height: 450px;
+      width: 400px;
+      border: solid 1px rgba(255, 255, 255, 0.514);
+      overflow: hidden;
+      box-shadow: 1px 6px 10px 2px rgba(0, 0, 0, 0.3);
+      margin: 0 auto; 
+
+    }
+  &__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  &__light{
+    background-color: $color-bg;
+    background-image: $bg-pattern-light;
+
+  }
+  &__dark{
+    background-color: $color-primary;
+    background-image: $bg-pattern-dark;
+
+  }
 }

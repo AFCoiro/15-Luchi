@@ -1,19 +1,22 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
-
-.dresscode {  
-  @include display-center;
-  &__title{
+.gifts{
+    @include display-center;
+    &__title{
+    color:$color-secondary;
     padding-bottom: $space-md;
+    margin: 0 auto;
   }
-    &__title__icon-container{
+    &__subtitle{
+    text-align: center;
+    margin: 0 auto;
     padding-bottom: $space-md;
 
   }
     &__description{
-          padding-bottom: $space-sm;
-
+    padding-bottom: $space-sm;
+    text-align: center;
   }
     &__color-note{
     text-align: center;
@@ -21,8 +24,9 @@
     opacity: 0.7;
     text-wrap: balance;
   }
-  &__note{
-
+  &__btn{
+    @include btn-outline;
+    margin-top: 8px;
   }
 
 }

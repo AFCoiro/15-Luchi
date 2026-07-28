@@ -5,17 +5,22 @@
 // EventDetails styles
 .event-details {
   @include display-center;
+  background-color: $color-primary;
+  background-image: $bg-pattern-dark;
   &__title{
     padding-bottom: 1rem;
+    color:$color-text-light;
+
   }
   &__icon {
-    color: $color-primary;
+    color: $color-text-light;
     display: block;
     transform-origin: center;
     @include icon-bounce;
   }
   &__info{
     text-align: center;
+    color:$color-text-light;
         font-size: clamp(1.2rem, 3vw, 1.5rem);
 
   }
@@ -25,6 +30,7 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     margin-block: $space-lg;
+    background-color: $color-bg
   }
   &__map-link{
     @include btn-outline;

@@ -19,7 +19,7 @@ const DressCode = ({ dresscode }) => {
       </Shirt> 
       </div>
       <p className="u-script dresscode__description">{dresscode.description}</p>
-      <p className="u-title dresscode__color-note">{dresscode.mainColorNote}</p>
+      <p className=" dresscode__color-note">{dresscode.mainColorNote}</p>
       <p className="dresscode__note">{dresscode.note}</p>
     </section>
   )

@@ -1,12 +1,14 @@
 @use './mixins' as *;
 @use './variables' as *;
-@use './sections' as *;
 
 @use './components/hero' as *;
 @use './components/countdown' as *;
 @use './components/event-details' as *;
 @use './components/dresscode' as *;
-
+@use './components/emotional-divider' as *;
+@use './components/section-divider';
+@use './components/hashtag';
+@use './components/gifts';
 
 @use './utils/reveal' as *;
 

@@ -1,0 +1,32 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.instagram{
+    @include display-center;
+    &__title{
+    color:$color-secondary;
+    padding-bottom: $space-md;
+    margin: 0 auto;
+  }
+    &__subtitle{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: $space-md;
+
+  }
+    &__description{
+    padding-bottom: $space-sm;
+    text-align: center;
+  }
+    &__color-note{
+    text-align: center;
+    padding-bottom: $space-md;
+    opacity: 0.7;
+    text-wrap: balance;
+  }
+  &__btn{
+    @include btn-outline;
+    margin-top: 8px;
+  }
+
+}

@@ -5,12 +5,13 @@ import Countdown from './components/Countdown'
 import SectionDivider from './components/SectionDivider'
 import EventDetails from './components/EventDetails'
 import DressCode from './components/DressCode'
+import EmotionalDivider from './components/EmotionalDivider'
+import Gifts from './components/Gifts'
+import Hashtag from './components/Hashtag'
 // import SpotifyPlayer from './components/SpotifyPlayer'
-import WeatherForecast from './components/WeatherForecast'
+// import WeatherForecast from './components/WeatherForecast'
 import RSVP from './components/RSVP'
 import Footer from './components/Footer'
-
-import { Gem } from 'lucide-react';
 
 function App() {
   const [data, setData] = useState(null)
@@ -47,17 +48,9 @@ function App() {
       <Countdown targetDate={data.date} />
 
       {/* emotional copy divider */}
-      <section className="emotional-section">
-        <div className='emotional-section__border-container'>
-          <p className='u-script emotional-section__copy'>Hay momentos que se sueñan e imaginan, se crean día a día. Hoy es tiempo de compartir lo soñado, es ahÍ donde necesito de tu magia para que juntos logremos que mi noche explote de emoción, diversión y brillos.
-          </p>
-          <Gem 
-            strokeWidth={0.5}
-              size={30} 
-              className='emotional-section__icon'
-            />
-        </div>
-      </section>
+      <EmotionalDivider emotionalMessage={data.emotionalMessage}/>
+
+      <SectionDivider index={1} alt={decorativeImages[1].alt} variant="light" />
 
       {/* Central block: details + Map + dress code */}
       <EventDetails
@@ -67,19 +60,21 @@ function App() {
       />
       <DressCode dresscode={data.dresscode} />
 
-      {/* weather */}
-      <WeatherForecast date={data.date} coordinates={data.venue.coordinates} />
+      <SectionDivider index={2} alt={decorativeImages[2].alt} variant="dark"/>
+
+      {/* <WeatherForecast date={data.date} coordinates={data.venue.coordinates} /> */}
+
+      <Gifts/>
+      
+      <SectionDivider index={3} alt={decorativeImages[3].alt} variant="dark"  />
+
+      {/* CAMBIAR <SpotifyPlayer spotify={data.spotify} POR HASHTAG DE CUMPLE/> */}
+      <Hashtag socialHashtag={data.socialHashtag} socialUrl={data.socialUrl} />
+      
+      <SectionDivider index={4} alt={decorativeImages[4].alt} variant="dark"  />
 
       {/* RSVP */}
-      <SectionDivider index={2} alt={decorativeImages[2].alt} />
-
       <RSVP rsvp={data.rsvp} />
-
-      {/* Extras  */}
-      <SectionDivider index={3} alt={decorativeImages[3].alt} />
-
-      {/* <SpotifyPlayer spotify={data.spotify} /> */}
-
       {/* Footer */}
       <Footer name={data.birthdayGirlName} />
     </>

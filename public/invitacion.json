@@ -25,23 +25,24 @@
   },
 
   "message": "¡Estás invitado a festejar conmigo este día tan especial!",
-  "extraMessage": "Sería un honor compartir este momento con vos.",
-
-
+  "emotionalMessage": "Hay momentos que se sueñan e imaginan, se crean día a día. Hoy es tiempo de compartir lo soñado, es ahÍ donde necesito de tu magia para que juntos logremos que mi noche explote de emoción, diversión y brillos.",
+  "socialHashtag":"#15Luchi",
+  "socialUrl": "https://www.instagram.com/explore/tags/15luchi/",
   "decorativeImages": [
     { "index": 0, "alt": "Luchi posing" },
     { "index": 1, "alt": "Luchi with number 15" },
     { "index": 2, "alt": "Luchi with number 15" },
-    { "index": 3, "alt": "Luchi with number 15" }
+    { "index": 3, "alt": "Luchi with number 15" },
+    { "index": 4, "alt": "Luchi with number 15" }
   ],
 
   "banners": [
     {
-      "url": "images/hero-banner.png",
+      "url": "images/hero-banner.jpeg",
       "alt": "Luchi sonriendo"
     },
     {
-      "url": "images/mini-banner.png",
+      "url": "images/mini-banner.jpeg",
       "alt": "Luchi con vestido de 15"
     }
   ],
@@ -50,6 +51,6 @@
     "active": true,
     "limitDate": "2026-09-19",
     "limitDateText": "hasta el 19 de Septiembre",
-    "message": "Por favor confirmá tu asistencia antes del 19 de Septiembre"
+    "message": "Por favor confirmá tu asistencia lo antes posible"
   }
 }

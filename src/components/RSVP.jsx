@@ -11,9 +11,9 @@ const RSVP = ({ rsvp }) => {
       <p className="rsvp__message">{rsvp.message}</p>
       <form className="rsvp__form">
         <input
-          type="text"
-          name="name"
-          placeholder="Tu nombre completo"
+          type="number"
+          name="dni"
+          placeholder="Tu DNI completo"
           className="rsvp__input"
           required
         />
@@ -22,14 +22,6 @@ const RSVP = ({ rsvp }) => {
           <option value="yes">Sí, voy a estar</option>
           <option value="no">No voy a poder ir</option>
         </select>
-        <input
-          type="number"
-          name="guests"
-          placeholder="¿Cuántos van? (incluyéndote)"
-          min="1"
-          max="10"
-          className="rsvp__input"
-        />
         <button type="submit" className="rsvp__button">
           Confirmar
         </button>
