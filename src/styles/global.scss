@@ -11,7 +11,7 @@
 @use './components/gifts';
 
 @use './utils/reveal' as *;
-
+@use './utils/modal' as *;
 *,
 *::before,
 *::after {
