@@ -1,19 +1,11 @@
-const Footer = ({ name }) => {
+const Footer = () => {
   return (
     <footer className="footer">
-      {/* Mensaje personal */}
-      <p className="footer__message">Con amor, {name} 🎀</p>
-
       {/* Créditos */}
-      <p className="footer__credits">
-        Sitio desarrollado por <strong>Agustín Coiro</strong> © Todos los derechos reservados
+      <p className="footer__credits u-title text-center">
+        Sitio desarrollado por <a className="afc bold text-center" href="https://www.linkedin.com/in/agustinfcoiro/" target="_blank">AFCoiro</a> - ©&nbsp;Todos los derechos reservados
       </p>
 
-      {/* Contacto */}
-      <div className="footer__contact">
-        <p>📞 <a href="tel:1169742087">1169742087</a></p>
-        <p>📧 <a href="mailto:agustinfcoiro@gmail.com">agustinfcoiro@gmail.com</a></p>
-      </div>
 
       {/* Opcional: redes sociales */}
       <div className="footer__social">

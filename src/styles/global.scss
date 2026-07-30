@@ -6,9 +6,10 @@
 @use './components/event-details' as *;
 @use './components/dresscode' as *;
 @use './components/emotional-divider' as *;
-@use './components/section-divider';
-@use './components/hashtag';
-@use './components/gifts';
+@use './components/section-divider' as *;
+@use './components/hashtag' as *;
+@use './components/gifts' as *;
+@use './components/rsvp' as *;
 
 @use './utils/reveal' as *;
 @use './utils/modal' as *;
@@ -38,19 +39,6 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
-.u-script  {
-  font-family: $font-decorative;
-  font-size: clamp(1.3rem, 6vw, 1.6rem);
-  font-weight: 400;
-  font-style: italic;
-}
-
-.u-title {
-    font-size: clamp(0.65rem, 2vw, 0.8rem);
-    font-family: $font-detail;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-}
 
 p {
   font-family: $font-body;
@@ -76,3 +64,58 @@ section + section {
   border-block: 1px solid $color-secondary-t;
 }
 
+input[type="radio"]{
+  accent-color: $color-primary;
+}
+
+/*--------SECTIONS CLASS-----------*/
+.bold{
+  font-weight: 800;
+}
+.text-center{
+  text-align: center;
+}
+.u-script  {
+  font-family: $font-decorative;
+  font-size: clamp(1.3rem, 6vw, 1.6rem);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.u-title {
+    font-size: clamp(0.65rem, 2vw, 0.8rem);
+    font-family: $font-detail;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding-bottom: $space-md;
+
+}
+.u-section-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.u-subtitle {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: $space-md;
+}
+
+.u-description {
+  text-align: center;
+  padding-bottom: $space-sm;
+}
+
+.u-note {
+  text-align: center;
+  padding-bottom: $space-md;
+  opacity: 0.7;
+  text-wrap: balance;
+}
+
+.u-btn{
+    @include btn-outline;
+    margin-top: 8px;
+  }

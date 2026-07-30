@@ -1,4 +1,50 @@
-// RSVP styles
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .rsvp {
-  // TODO
+  &__form{
+    width: 90%;
+  }
+  &__title-modal{
+    padding-block: 1rem;
+  }
+  &__label.u-title{
+    padding-bottom: 0rem;
+    align-self: flex-start;
+    text-align: start;
+  }
+  &__name-container{
+  padding-top: $space-md;
+  padding-bottom: $space-sm;
+  width: 100%;
+  }
+  &__menu-container{
+  padding-bottom: $space-md;
+  width: 100%;
+  }
+  &__radio-label{
+    display: flex;
+    gap: 0.5rem;
+  }
+  &__input{
+    border: solid 1px $color-secondary;
+    border-radius: 5px;
+    padding: 10px;
+    color: $color-primary;
+    font-family: $font-body;
+    width: 100%;
+
+  }
+  &__input:focus{
+    border: solid 1px $color-primary;
+    outline: none;
+    box-shadow: 0 0 0 1px $color-primary;
+  }
+  &__button-confirm{
+    margin:0 auto $space-lg;
+    
+  }
+  &__final-message{
+      padding-top: $space-xl;
+  }
 }

@@ -31,10 +31,10 @@
   
   "decorativeImages": [
     { "index": 0, "alt": "Luchi posing" },
-    { "index": 1, "alt": "Luchi with number 15" },
-    { "index": 2, "alt": "Luchi with number 15" },
-    { "index": 3, "alt": "Luchi with number 15" },
-    { "index": 4, "alt": "Luchi with number 15" }
+    { "index": 1, "alt": "Luchi de chiquita" },
+    { "index": 2, "alt": "Luchi de chiquita" },
+    { "index": 3, "alt": "Luchi de chiquita" },
+    { "index": 4, "alt": "Luchi de chiquita" }
   ],
 
   "banners": [
@@ -52,6 +52,6 @@
     "active": true,
     "limitDate": "2026-09-19",
     "limitDateText": "hasta el 19 de Septiembre",
-    "message": "Por favor confirmá tu asistencia lo antes posible"
+    "message": "Es importante que confirmes tu asistencia antes del 1 de Septiembre"
   }
 }

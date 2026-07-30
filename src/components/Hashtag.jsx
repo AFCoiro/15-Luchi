@@ -6,7 +6,7 @@ const Hashtag = ({socialHashtag,socialUrl}) => {
 
   return (
     <section className="instagram">
-      <h2 className=" instagram__title u-title">Quiero ver tus fotos</h2>
+      <h2 className=" instagram__title u-title">Compartí tus fotos</h2>
     <h3 className='instagram__subtitle u-script'>{socialHashtag}</h3>
 
       {/* TODO: display temperature, condition icon, humidity */}

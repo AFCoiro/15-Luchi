@@ -44,7 +44,7 @@ useEffect(()=>{
   return (
     <section className="countdown">
       <h2 className="countdown__title u-title ">Agendá la fecha</h2>
-      <h3 className="countdown__subTitle u-script">Sábado 19 de Septiembre · 21:00 hs</h3>
+      <h3 className="countdown__subTitle u-script">Sábado 19 de Septiembre · 21:00&nbsp;hs</h3>
       <div className="countdown__units">
         <div className="countdown__unit">
           <span className="countdown__number">{timeLeft ? timeLeft.days : '--'}</span>

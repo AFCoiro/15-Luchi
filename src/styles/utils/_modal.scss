@@ -18,8 +18,9 @@
         background-color: $color-bg;
         background-image: $bg-pattern-light;
         width: 80vw;
-        aspect-ratio: 3/2;
+        min-height: 320px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;

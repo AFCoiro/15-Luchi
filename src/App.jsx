@@ -74,7 +74,7 @@ function App() {
       <SectionDivider index={4} alt={decorativeImages[4].alt} variant="dark"  />
 
       {/* RSVP */}
-      <RSVP rsvp={data.rsvp} />
+      <RSVP rsvp={data.rsvp} name={data.birthdayGirlName} />
       {/* Footer */}
       <Footer name={data.birthdayGirlName} />
     </>
