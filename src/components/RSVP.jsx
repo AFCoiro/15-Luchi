@@ -32,8 +32,8 @@ const RSVP = ({ rsvp, name }) => {
       <h2  className="u-script rsvp__title-modal">¿Vas a venir?</h2>
       <form className="rsvp__form u-section-center">
 {/* Grupo si/no */}
-        <div className="rsvp__radio-group u-section-center ">
-            <label className="rsvp__radio-label u-description">
+        <div className="rsvp__radio-group ">
+            <label className="rsvp__radio-label">
               <input 
               type="radio" 
               name="asistencia" 
@@ -55,37 +55,41 @@ const RSVP = ({ rsvp, name }) => {
               No, me la pierdo..
             </label>
         </div>
-{/* Campo Nombre */}
-        <div className='rsvp__name-container u-section-center'>
-          <label 
-          htmlFor="nombre"
-          className="rsvp__label u-title">
-            Nombre completo<span className='bold'>*</span>:</label>
-          <input
-          id="nombre"
-          type="text"
-          name="nombre"
-          placeholder="Como figurás en la lista"
-          className="rsvp__input"
-          autoComplete="name"
-          required
-          />
+
+        <div className='rsvp__input-group'>
+    {/* Campo Nombre */}
+            <div className='rsvp__name-container u-section-center'>
+              <label 
+              htmlFor="nombre"
+              className="rsvp__label u-title">
+                Nombre completo<span className='bold'>*</span>:</label>
+              <input
+              id="nombre"
+              type="text"
+              name="nombre"
+              placeholder="Como figurás en la lista"
+              className="rsvp__input"
+              autoComplete="name"
+              required
+              />
+            </div>
+      {/* Campo Comida */}      
+            <div className='rsvp__menu-container u-section-center '>
+              <label 
+              htmlFor="menu" 
+              className="rsvp__label u-title">
+                Restricción alimentaria</label>
+              <input
+              id="menu"
+              type="text"
+              name="comida"
+              placeholder="Ej: Ninguna, Vegano, Celíaco..."
+              className="rsvp__input"
+              
+            />
+            </div>
         </div>
-  {/* Campo Comida */}      
-        <div className='rsvp__menu-container u-section-center '>
-          <label 
-          htmlFor="menu" 
-          className="rsvp__label u-title">
-            Restricción alimentaria</label>
-          <input
-          id="menu"
-          type="text"
-          name="comida"
-          placeholder="Ej: Ninguna, Vegano, Celíaco..."
-          className="rsvp__input"
-          
-        />
-        </div>
+
 
         <button
         type="submit" 
