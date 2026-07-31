@@ -1,5 +1,5 @@
 
-import { MapPinned } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 const EventDetails = ({ venue }) => {
   const embedUrl = `https://maps.google.com/maps?q=${venue.coordinates.lat},${venue.coordinates.lng}&z=16&output=embed`
@@ -10,10 +10,7 @@ const EventDetails = ({ venue }) => {
       <h2 className="event-details__title u-title">¿Dónde?</h2>
 
       <div className="event-details__icon-container">
-        <MapPinned 
-        className="event-details__icon"
-        size={64} strokeWidth={1} 
-        />
+
       </div>
       
       <div className="event-details__info u-script">
@@ -38,7 +35,7 @@ const EventDetails = ({ venue }) => {
         target="_blank"
         rel="noopener noreferrer"
         className="event-details__map-link">
-        Como llegar
+        <MapPin strokeWidth={1.2}/>Como llegar
       </a>
     </section>
   )

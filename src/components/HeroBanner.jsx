@@ -12,9 +12,10 @@ const HeroBanner = ({ data }) => {
         aria-hidden="true"
       />
       <div className="hero-banner__overlay" aria-hidden="true" />
+      <img className="hero-banner__frame" aria-hidden="true" src="/images/floral-frame.svg" />
       <div ref={contentRef} className="hero-banner__content">
-        <p className="u-script hero-banner__decorative">{data.birthdayGirlName}</p>
         <h1 className="hero-banner__title">{data.subtitle}</h1>
+        <p className="u-script hero-banner__decorative">{data.birthdayGirlName}</p>
         <div className="hero-banner__divider" aria-hidden="true" />
         <p className="u-title hero-banner__date">{data.dateText}</p>
         <p className="hero-banner__message">{data.message}</p>

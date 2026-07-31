@@ -23,7 +23,11 @@
     "mainColorNote": "No usar color bordo (reservado para la cumpleañera)",
     "note": "¡Vení con tu mejor look!"
   },
-
+  "gift": {
+    "alias": "XXX.YYY.ZZZ",
+    "cbu": "0000 0000 0000 0000",
+    "name": "Nombre Apellido"
+  },
   "message": "¡Estás invitado a festejar conmigo este día tan especial!",
   "emotionalMessage": "Hay momentos que se sueñan e imaginan, se crean día a día. Hoy es tiempo de compartir lo soñado, es ahÍ donde necesito de tu magia para que juntos logremos que mi noche explote de emoción, diversión y brillos.",
   "socialHashtag":"#15Luchi",

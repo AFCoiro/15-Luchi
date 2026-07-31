@@ -96,7 +96,8 @@ const RSVP = ({ rsvp, name }) => {
 
       </form>
       </Modal>
-      <p className="rsvp__final-message u-script">Los espero. Con&nbsp;amor, {name} 💖</p>
+      <p className="rsvp__final-message u-script">Los espero. Con&nbsp;amor,</p>
+       <p className='rsvp__name-end u-script'>{name} 💖</p>
     </section>
   )
 }

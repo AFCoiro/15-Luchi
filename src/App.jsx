@@ -64,7 +64,7 @@ function App() {
 
       {/* <WeatherForecast date={data.date} coordinates={data.venue.coordinates} /> */}
 
-      <Gifts/>
+      <Gifts gift={data.gift} />
       
       <SectionDivider index={3} alt={decorativeImages[3].alt} variant="dark"  />
 

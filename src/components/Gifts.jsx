@@ -5,15 +5,13 @@ import Modal from './layout/Modal';
 import { Gift } from 'lucide-react';
 
 
-const Gifts = () => {
+const Gifts = ({ gift }) => {
 
   const[isOpen,setIsOpen] =useState(false)
 
   return (
     <section className="gifts">
       <h2 className="u-title gifts__title">Regalos</h2>
-      <Gift />
-      {/* TODO: display temperature, condition icon, humidity */}
       <h3 className="gifts__subtitle u-script">
         ¿Querés hacerme un regalo?</h3>
       <p className="gifts__description" >Tu presencia es lo más importante. Pero si además querés hacerme algún regalo...</p>
@@ -29,12 +27,14 @@ const Gifts = () => {
       onClose={()=>setIsOpen(false)}
       >
         <div>
-          <h3>Regalos</h3>
-          <Gift strokeWidth={1.2}/>
-          <h4>Alias:</h4>
-          <p>XXX.YYY.ZZZ</p>
+          <h2 className='u-subtitle u-title gifts__title'>Regalos</h2>
+          <h3 className='u-subtitle u-script'>...podés transferirme a:</h3>
           <h4>Nombre</h4>
-          <p>XXX.YYY.ZZZ</p>
+          <p>{gift.name}</p>
+          <h4>Alias:</h4>
+          <p>{gift.alias}</p>
+          <h4>CBU:</h4>
+          <p>{gift.cbu}</p>
         </div>
       </Modal>
     </section>

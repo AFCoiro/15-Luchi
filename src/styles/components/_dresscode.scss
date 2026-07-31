@@ -5,13 +5,9 @@
 .dresscode {  
   @include display-center;
   &__title{
-    padding-bottom: $space-md;
+    color:$color-secondary;
   }
-    &__title__icon-container{
-    padding-bottom: $space-md;
-
-  }
-    &__description{
+  &__description{
           padding-bottom: $space-sm;
 
   }
@@ -21,8 +17,6 @@
     opacity: 0.7;
     text-wrap: balance;
   }
-  &__note{
 
-  }
 
 }

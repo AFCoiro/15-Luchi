@@ -2,6 +2,9 @@
 @use '../mixins' as *;
 
 .rsvp {
+  &__title{
+    color:$color-secondary;
+  }
   &__form{
     width: 90%;
   }
@@ -47,4 +50,5 @@
   &__final-message{
       padding-top: $space-xl;
   }
+
 }
