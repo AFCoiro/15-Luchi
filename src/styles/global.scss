@@ -1,5 +1,5 @@
-@use './mixins' as *;
-@use './variables' as *;
+@use './utils/mixins' as *;
+@use './utils/variables' as *;
 
 @use './components/hero' as *;
 @use './components/countdown' as *;
@@ -10,9 +10,16 @@
 @use './components/hashtag' as *;
 @use './components/gifts' as *;
 @use './components/rsvp' as *;
+@use './components/floating-buttons' as *;
+@use './components/footer' as *;
 
-@use './utils/reveal' as *;
+
+@use './utils/animations' as *;
 @use './utils/modal' as *;
+
+
+
+
 *,
 *::before,
 *::after {
@@ -32,6 +39,7 @@ body {
   line-height: 1.6;
   background-image: $bg-pattern-light;
   background-size: 40px 40px;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {

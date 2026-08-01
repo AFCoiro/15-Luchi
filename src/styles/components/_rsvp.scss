@@ -1,5 +1,5 @@
-@use '../variables' as *;
-@use '../mixins' as *;
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 .rsvp {
   &__title{
@@ -8,13 +8,15 @@
   &__form{
     width: 90%;
   }
-  &__title-modal{
-    padding-block: 1rem;
+  &__title-modal.u-script{
+    padding-block: 3rem 1rem;
+    font-size: 30px;
   }
   &__label.u-title{
     padding-bottom: 0rem;
     align-self: flex-start;
     text-align: start;
+    font-size: 14px;
   }
   &__name-container{
   padding-top: $space-md;
@@ -28,20 +30,21 @@
   &__radio-group {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding-top: 0.5rem;
+    gap: 1.5rem;
+    padding-top: 2rem;
   }
   &__radio-label{
     display: flex;
-    gap: 0.5rem;
+    gap: 1.5rem;
+    font-size: 20px;
   }
   &__input-group{
     width: 100%;
-    padding-block: 1rem;
+    padding-block: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-  }
+    gap: 1rem;
+}
   &__input{
     border: solid 1px $color-secondary;
     border-radius: 5px;
@@ -56,12 +59,14 @@
     outline: none;
     box-shadow: 0 0 0 1px $color-primary;
   }
+  &__input::placeholder{
+        font-size: 16px;
+  }
   &__button-confirm{
-    margin:0 auto $space-lg;
+    margin:0 auto 3rem;
     
   }
   &__final-message{
       padding-top: $space-xl;
   }
-
 }

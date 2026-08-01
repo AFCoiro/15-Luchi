@@ -1,6 +1,13 @@
-// Footer styles
 .footer {
   display: flex;
-  flex-direction: row;
-  
+  flex-direction: column;
+  padding-top: 1rem;
+  &__credits.u-title{
+    padding-bottom: 0.2rem;
+    }
+  &__afc{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
 }

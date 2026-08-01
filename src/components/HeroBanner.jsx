@@ -6,20 +6,59 @@ const HeroBanner = ({ data }) => {
 
   return (
     <section className="hero-banner">
+
+      {/* Background */}
       <div
         className="hero-banner__bg"
-        style={{ backgroundImage: `url(/${data.banners[0].url})` }}
+        style={{
+          backgroundImage: `url(/${data.banners[0].url})`,
+        }}
         aria-hidden="true"
       />
-      <div className="hero-banner__overlay" aria-hidden="true" />
-      <img className="hero-banner__frame" aria-hidden="true" src="/images/floral-frame.svg" />
-      <div ref={contentRef} className="hero-banner__content">
-        <h1 className="hero-banner__title">{data.subtitle}</h1>
-        <p className="u-script hero-banner__decorative">{data.birthdayGirlName}</p>
-        <div className="hero-banner__divider" aria-hidden="true" />
-        <p className="u-title hero-banner__date">{data.dateText}</p>
-        <p className="hero-banner__message">{data.message}</p>
+
+      {/* Dark overlay */}
+      <div
+        className="hero-banner__overlay"
+        aria-hidden="true"
+      />
+
+      {/* Decorative floral frame */}
+      <img
+        className="hero-banner__frame"
+        aria-hidden="true"
+        src="/images/floral-frame.svg"
+        alt=""
+      />
+
+      {/* Hero content */}
+      <div
+        ref={contentRef}
+        className="hero-banner__content"
+      >
+
+        <h1 className="hero-banner__title">
+          {data.subtitle}
+        </h1>
+
+        <p className="u-script hero-banner__decorative">
+          {data.birthdayGirlName}
+        </p>
+
+        <div
+          className="hero-banner__divider"
+          aria-hidden="true"
+        />
+
+        <p className="u-title hero-banner__date">
+          {data.dateText}
+        </p>
+
+        <p className="hero-banner__message">
+          {data.message}
+        </p>
+
       </div>
+
     </section>
   )
 }

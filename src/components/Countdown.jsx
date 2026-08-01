@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
+import useScrollReveal from "../hooks/useScrollReveal"
 
 const Countdown = ({ targetDate }) => {
 
   const [timeLeft, setTimeLeft] = useState(null)
   const [finishTime, setFinishTime] = useState(false)
+  const revealRef = useScrollReveal()
 
 useEffect(()=>{
     const date = new Date(targetDate).getTime(); 
@@ -43,35 +45,38 @@ useEffect(()=>{
 
   return (
     <section className="countdown">
-      <h2 className="countdown__title u-title ">Agendá la fecha</h2>
-      <h3 className="countdown__subTitle u-script">Sábado 19 de Septiembre · 21:00&nbsp;hs</h3>
-      <div className="countdown__units">
-        <div className="countdown__unit">
-          <span className="countdown__number">{timeLeft ? timeLeft.days : '--'}</span>
-          <span className="countdown__label u-title">días</span>
+      <div ref={revealRef} className="countdown__container reveal-group">
+        <h2 className="countdown__title u-title reveal-item reveal-up">Agendá la fecha</h2>
+        <h3 className="countdown__subTitle u-script reveal-item reveal-up">Sábado 19 de Septiembre · 21:00&nbsp;hs</h3>
+        <div className="countdown__units reveal-item reveal-fade">
+          <div className="countdown__unit">
+            <span className="countdown__number">{timeLeft ? timeLeft.days : '--'}</span>
+            <span className="countdown__label u-title">días</span>
+          </div>
+          <div className="countdown__unit">
+            <span className="countdown__number">{timeLeft ? timeLeft.hours : '--'}</span>
+            <span className="countdown__label u-title">horas</span>
+          </div>
+          <div className="countdown__unit">
+            <span className="countdown__number">{timeLeft ? timeLeft.minutes : '--'}</span>
+            <span className="countdown__label u-title">minutos</span>
+          </div>
+          <div className="countdown__unit">
+            <span className="countdown__number">{timeLeft ? timeLeft.seconds : '--'}</span>
+            <span className="countdown__label u-title">segundos</span>
+          </div>
         </div>
-        <div className="countdown__unit">
-          <span className="countdown__number">{timeLeft ? timeLeft.hours : '--'}</span>
-          <span className="countdown__label u-title">horas</span>
-        </div>
-        <div className="countdown__unit">
-          <span className="countdown__number">{timeLeft ? timeLeft.minutes : '--'}</span>
-          <span className="countdown__label u-title">minutos</span>
-        </div>
-        <div className="countdown__unit">
-          <span className="countdown__number">{timeLeft ? timeLeft.seconds : '--'}</span>
-          <span className="countdown__label u-title">segundos</span>
-        </div>
+        <a 
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Cumplea%C3%B1os%20de%20Luchi&dates=20260919T210000%2F20260920T010000&location=Los%20Robles%20Hall%2C%20Gral.%20Manuel%20Belgrano%20180%2C%20Moreno&details=Fiesta%20de%2015%20de%20Luchi%20%F0%9F%8E%89"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="countdown__calendar-btn reveal-item reveal-scale"
+        >
+          <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          &nbsp;Agendar fecha
+        </a>
       </div>
-      <a 
-        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Cumplea%C3%B1os%20de%20Luchi&dates=20260919T210000%2F20260920T010000&location=Los%20Robles%20Hall%2C%20Gral.%20Manuel%20Belgrano%20180%2C%20Moreno&details=Fiesta%20de%2015%20de%20Luchi%20%F0%9F%8E%89"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="countdown__calendar-btn"
-      >
-        <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-        &nbsp;Agendar fecha
-      </a>
+
     </section>
   )
 }

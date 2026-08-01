@@ -1,5 +1,5 @@
-@use '../variables' as *;
-@use '../mixins' as *;
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 
 // EventDetails styles
@@ -32,8 +32,6 @@
     margin-block: $space-lg;
     background-color: $color-bg
   }
-  &__map-link{
-    @include btn-outline;
-  }
+
 }
 

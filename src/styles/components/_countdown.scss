@@ -1,12 +1,14 @@
-@use '../variables' as *;
-@use '../mixins' as *;
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 .countdown {
+  &__container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  }
   &__title{
     color: $color-secondary;
   }

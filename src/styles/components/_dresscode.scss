@@ -1,9 +1,11 @@
-@use '../variables' as *;
-@use '../mixins' as *;
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 
 .dresscode {  
-  @include display-center;
+  &__container{
+    @include display-center;
+  }
   &__title{
     color:$color-secondary;
   }

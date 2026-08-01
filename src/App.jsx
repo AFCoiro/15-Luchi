@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 
+import MusicPlayer from "./components/floating/MusicPlayer";
+import FloatingRSVP from "./components/floating/FloatingRSVP";
+
 import HeroBanner from './components/HeroBanner'
 import Countdown from './components/Countdown'
 import SectionDivider from './components/SectionDivider'
@@ -8,10 +11,9 @@ import DressCode from './components/DressCode'
 import EmotionalDivider from './components/EmotionalDivider'
 import Gifts from './components/Gifts'
 import Hashtag from './components/Hashtag'
-// import SpotifyPlayer from './components/SpotifyPlayer'
-// import WeatherForecast from './components/WeatherForecast'
 import RSVP from './components/RSVP'
-import Footer from './components/Footer'
+
+import Footer from './components/layout/Footer'
 
 function App() {
   const [data, setData] = useState(null)
@@ -43,6 +45,9 @@ function App() {
   return (
     <>
       {/* Hero + Clock */}
+      <MusicPlayer/>
+      <FloatingRSVP/>
+
       <HeroBanner data={data} />
 
       <Countdown targetDate={data.date} />
