@@ -30,7 +30,7 @@
   &__radio-group {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     padding-top: 2rem;
   }
   &__radio-label{
@@ -48,7 +48,7 @@
   &__input{
     border: solid 1px $color-secondary;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px 10px;
     color: $color-primary;
     font-family: $font-body;
     width: 100%;

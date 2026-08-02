@@ -106,7 +106,7 @@ const RSVP = ({ rsvp, name }) => {
         </form>
         </Modal>
         <p className="rsvp__final-message u-script  reveal-item reveal-up">Los espero. Con amor,</p>
-        <p className='rsvp__name-end u-script  reveal-item reveal-scale'>{name} 💖</p>
+        <p className='rsvp__name-end u-script  reveal-item reveal-scale'>{name} ❤️</p>
        </div>
     </section>
   )
