@@ -39,8 +39,8 @@ const Gifts = ({ gift }) => {
             <p>{gift.name}</p>
             <h4>Alias:</h4>
             <p>{gift.alias}</p>
-            <h4>CBU:</h4>
-            <p>{gift.cbu}</p>
+            <h4>CVU:</h4>
+            <p>{gift.cvu}</p>
           </div>
         </Modal>
       </div>
