@@ -152,7 +152,7 @@ const AdminPage = () => {
   return (
     <div className="admin">
       <h1 className="admin__title">Panel de administración</h1>
-      <p className="admin__subtitle">Invitación de Luchi 💖</p>
+      <p className="admin__subtitle">Invitación de Lucia 💖</p>
 
       <div className="admin__tabs">
         <button

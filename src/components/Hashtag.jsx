@@ -15,7 +15,7 @@ const Hashtag = ({socialHashtag,socialUrl}) => {
         <h2 className=" instagram__title u-title reveal-item reveal-up">Compartí tus fotos</h2>
         <h3 className='instagram__subtitle u-script reveal-item reveal-up'>{socialHashtag}</h3>
         <p className="instagram__description  reveal-item reveal-fade">
-          Compartí tus fotos y videos de ese hermoso día.Pueden usar mi # en todas sus publicaciones.</p>
+          Compartí tus fotos y videos de este día tan especial y arrobame para que pueda ver y guardar todos esos hermosos recuerdos.</p>
           
         <a href={socialUrl}
           target="_blank"
