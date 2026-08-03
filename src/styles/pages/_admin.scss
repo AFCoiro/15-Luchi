@@ -1,0 +1,380 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.admin {
+  min-height: 100vh;
+  background-color: $color-bg;
+  background-image: $bg-pattern-light;
+  background-size: 40px 40px;
+  padding: $space-xl;
+  font-family: $font-body;
+  color: $color-text;
+
+  &__title {
+    font-family: $font-title;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: $color-primary;
+    margin-bottom: $space-xs;
+  }
+
+  &__subtitle {
+    font-family: $font-decorative;
+    font-size: 1.2rem;
+    color: $color-secondary;
+    margin-bottom: $space-xl;
+  }
+
+  // ==========================================
+// TABLA — solo desktop
+// ==========================================
+
+.admin__table--desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: table;
+  }
+}
+
+// ==========================================
+// CARDS — solo mobile
+// ==========================================
+
+.admin__cards {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+  padding: $space-md $space-lg;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.admin__card {
+  background: white;
+  border-radius: 8px;
+  padding: $space-md;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.admin__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $space-xs;
+}
+
+.admin__card-name {
+  font-weight: 500;
+  font-family: $font-body;
+}
+
+.admin__card-body {
+  display: flex;
+  gap: $space-md;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.admin__card-edit {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+}
+
+.admin__card-actions {
+  display: flex;
+  gap: $space-xs;
+}
+
+// ==========================================
+// ACTION BUTTONS
+// ==========================================
+
+.admin__actions {
+  display: flex;
+  gap: $space-xs;
+}
+
+.admin__action-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+
+  &--edit {
+    color: $color-secondary;
+    &:hover { background: rgba(212, 175, 55, 0.1); }
+  }
+
+  &--delete {
+    color: #c0392b;
+    &:hover { background: rgba(192, 57, 43, 0.1); }
+  }
+
+  &--save {
+    color: #27ae60;
+    &:hover { background: rgba(39, 174, 96, 0.1); }
+  }
+
+  &--cancel {
+    color: $color-text;
+    opacity: 0.5;
+    &:hover { background: rgba(0, 0, 0, 0.05); }
+  }
+}
+
+// ==========================================
+// INLINE INPUTS (edición en tabla)
+// ==========================================
+
+.admin__input--inline {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+.admin__select--inline {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.85rem;
+}
+  // ==========================================
+  // TABS
+  // ==========================================
+
+  &__tabs {
+    display: flex;
+    gap: $space-sm;
+    margin-bottom: $space-xl;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    padding-bottom: 0;
+  }
+
+  &__tab {
+    font-family: $font-detail;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: $space-sm $space-lg;
+    color: $color-text;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    margin-bottom: -1px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &--active {
+      opacity: 1;
+      color: $color-primary;
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+
+  // ==========================================
+  // PANEL
+  // ==========================================
+
+  &__panel {
+    display: flex;
+    flex-direction: column;
+    gap: $space-xl;
+  }
+
+  // ==========================================
+  // FORM
+  // ==========================================
+
+  &__form {
+    display: flex;
+    gap: $space-sm;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 12px;
+    padding: $space-lg;
+  }
+
+  &__input {
+    flex: 1;
+    min-width: 200px;
+    font-family: $font-body;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid rgba(74, 16, 64, 0.2);
+    border-radius: 8px;
+    background: white;
+    color: $color-text;
+    outline: none;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      border-color: $color-primary;
+    }
+  }
+
+  &__select {
+    font-family: $font-body;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid rgba(74, 16, 64, 0.2);
+    border-radius: 8px;
+    background: white;
+    color: $color-text;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      border-color: $color-primary;
+    }
+  }
+
+  &__btn {
+    @include btn-outline;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  &__error {
+    color: #c0392b;
+    font-size: 0.85rem;
+    font-family: $font-body;
+  }
+
+  &__success {
+    color: #27ae60;
+    font-size: 0.85rem;
+    font-family: $font-body;
+  }
+
+  // ==========================================
+  // MESA
+  // ==========================================
+
+  &__mesa {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  &__mesa-title {
+    font-family: $font-detail;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $color-secondary;
+    padding: $space-md $space-lg;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    background: rgba(212, 175, 55, 0.05);
+  }
+
+  // ==========================================
+  // TABLE
+  // ==========================================
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+
+    th {
+      font-family: $font-detail;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $color-text;
+      opacity: 0.5;
+      padding: $space-sm $space-lg;
+      text-align: left;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    td {
+      padding: $space-sm $space-lg;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+      color: $color-text;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(74, 16, 64, 0.03);
+    }
+  }
+
+  // ==========================================
+  // SUMMARY
+  // ==========================================
+
+  &__summary {
+    display: flex;
+    gap: $space-lg;
+    flex-wrap: wrap;
+  }
+
+  &__stat {
+    flex: 1;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-xs;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 12px;
+    padding: $space-lg;
+  }
+
+  &__stat-number {
+    font-family: $font-title;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $color-primary;
+    line-height: 1;
+  }
+
+  &__stat-label {
+    font-family: $font-detail;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  // ==========================================
+  // LOADER
+  // ==========================================
+
+  &__loader {
+    display: flex;
+    justify-content: center;
+    padding: $space-xl;
+  }
+
+  &__spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid rgba(74, 16, 64, 0.15);
+    border-top-color: $color-primary;
+    border-radius: 50%;
+    animation: adminSpin 0.8s linear infinite;
+  }
+}
+
+@keyframes adminSpin {
+  to { transform: rotate(360deg); }
+}
