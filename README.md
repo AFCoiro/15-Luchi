@@ -14,8 +14,7 @@
 - [ ] Customizable texts, colors, and fonts from JSON.
 - [ ] Integration with **Google Maps** for venue location.
 - [ ] RSVP management with Firestore.
-- [ ] Elegant / semi-formal **dress code** section.
-- [ ] Future admin panel for real-time editing.
+- [ ] Admin panel for real-time editing.
 
 ---
 
@@ -36,12 +35,9 @@
 
 ---
 
-## 🔮 Future Work
-- [ ] Admin panel for editing invitations.
-- [ ] Animations and aspirational design styles.
-- [ ] Automatic RSVP confirmation.
 
 ---
 
 ## 🔗 Live Demo
-👉 Coming soon: [Project Link](https://vercel.com)  
+👉
+[Project Link](https://15-luchi.vercel.app/)  
